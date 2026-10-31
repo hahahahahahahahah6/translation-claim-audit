@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "translation-claim-audit"
+version = "0.1.0"
+description = "Offline static audit of documented translation claims"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+
+[project.scripts]
+translation-claim-audit = "translation_claim_audit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["translation_claim_audit*"]
